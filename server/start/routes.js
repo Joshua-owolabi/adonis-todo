@@ -22,4 +22,13 @@ Route.get('/', () => {
 Route.group(() => {
 	Route.post('auth/register', 'UserController.register')
 	Route.post('auth/login', 'UserController.login')
+	Route.get('projects', 'ProjectController.index').middleware('auth')
+	Route.post('new-project', 'ProjectController.create').middleware('auth')
+	Route.patch('update-project/:id', 'ProjectController.update').middleware('auth')
+	Route.delete('destroy-project/:id', 'ProjectController.destroy').middleware('auth')
+	// tasks
+	Route.get('project/:id/tasks', 'TaskController.index').middleware('auth')
+	Route.post('project/:id/tasks', 'TaskController.create').middleware('auth')
+	Route.patch('tasks/:id', 'TaskController.update').middleware('auth')
+	Route.delete('tasks/:id', 'TaskController.destroy').middleware('auth')
 }).prefix('api')
