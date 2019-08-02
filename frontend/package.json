@@ -16,6 +16,7 @@
     "vuetify": "^2.0.3",
     "vuex": "^3.0.1",
     "vuex-persistedstate": "^2.5.4",
+    "vuex-router": "^1.1.5",
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
@@ -27,7 +28,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
+    "sass": "^1.17.4",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-cli-plugin-vuetify": "^0.6.1",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2"
   }
 }
